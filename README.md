@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Employee Management System
 
-## Getting Started
+A simple employee management system built with **Next.js**, **React**, **TypeScript**, and **Ant Design**.  
+This project demonstrates CRUD operations for employee records with a clean UI and modern frontend practices.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/kahhong86/employee-management-system.git
+cd employee-management-system
+
+### 2. Install dependencies
+Make sure you have Node.js 18+ and npm 9+ (or yarn) installed.
+
+npm install
+# or
+yarn install
+
+
+### 3. Setup environment variables
+Create a .env.local file in the root directory and add:
+
+NEXT_PUBLIC_API_URL=<your-third-party-api-endpoint>
+Replace <your-third-party-api-endpoint> with the actual API base URL.
+
+### 4. Run the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The app will be available at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Build for production
+npm run build
+npm run start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 6. Run Cypress tests
+First, ensure the development server is running (npm run dev).
+Then in another terminal:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Open Cypress test runner (interactive mode)
+npm run cypress:open
 
-## Learn More
+# Run Cypress tests in headless mode
+npm run cypress:run
+📌 Assumptions Made During Development
+API
 
-To learn more about Next.js, take a look at the following resources:
+The project fetches data from a third-party API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API responses are assumed to be in JSON format with fields like { id, name, email, role }.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The third-party API must be available during development and testing.
 
-## Deploy on Vercel
+Environment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Development environment uses Node.js v18+.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Local frontend runs on http://localhost:3000.
+
+UI/UX
+
+Ant Design components are used for layout, forms, tables, and modals.
+
+Navigation highlighting is based on the current pathname.
+
+Testing
+
+Cypress is used for end-to-end testing.
+
+Success messages from Ant Design are temporary (antd message component), so Cypress tests wait for their presence before proceeding.
+
+📂 Project Structure (Simplified)
+csharp
+Copy code
+employee-management-system/
+│── src/
+│   ├── app/           # Next.js App Router pages
+│   ├── components/    # Reusable UI components
+│   ├── services/      # API request logic
+│   └── styles/        # Global styles
+│
+│── public/            # Static assets
+│── .env.local         # Environment variables (ignored by git)
+│── package.json       # Dependencies and scripts
+🛠️ Tech Stack
+Next.js – React framework with App Router
+
+TypeScript – Type safety
+
+Ant Design – UI components
+
+Axios / Fetch API – API requests
+
+Cypress – End-to-end testing
+
+👤 Author
+Developed by Kah Hong.
