@@ -1,0 +1,12 @@
+/* CSS Variables for consistency */
+:root {
+  --color-primary: #1890ff;
+  --color-success: #52c41a;
+  --color-error: #ff4d4f;
+  --color-text-secondary: #666;
+  --color-border: #d9d9d9;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --border-radius: 8px;
+}

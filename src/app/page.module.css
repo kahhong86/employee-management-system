@@ -1,0 +1,54 @@
+.employee-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+
+.employee-name {
+  margin: 0 0 8px 0;
+  color: #1890ff;
+}
+
+.employee-detail {
+  margin: 4px 0;
+  color: #666;
+}
+
+.employee-label {
+  font-weight: bold;
+}
+
+.employee-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.employee-section {
+  padding: 8px 0;
+}
+
+.employee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.employee-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.employee-personal {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .employee-personal {
+    text-align: left;
+    margin-top: 16px;
+  }
+}

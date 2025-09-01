@@ -1,0 +1,200 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "John",
+        "last": "Doe"
+      },
+      "email": "john.doe@example.com",
+      "dob": {
+        "date": "1990-01-15T00:00:00.000Z",
+        "age": 34
+      },
+      "registered": {
+        "date": "2020-01-15T00:00:00.000Z",
+        "age": 4
+      },
+      "phone": "91234567",
+      "cell": "91234567"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Jane",
+        "last": "Smith"
+      },
+      "email": "jane.smith@example.com",
+      "dob": {
+        "date": "1985-03-22T00:00:00.000Z",
+        "age": 39
+      },
+      "registered": {
+        "date": "2019-03-22T00:00:00.000Z",
+        "age": 5
+      },
+      "phone": "82345678",
+      "cell": "82345678"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Bob",
+        "last": "Johnson"
+      },
+      "email": "bob.johnson@example.com",
+      "dob": {
+        "date": "1992-07-10T00:00:00.000Z",
+        "age": 32
+      },
+      "registered": {
+        "date": "2021-07-10T00:00:00.000Z",
+        "age": 3
+      },
+      "phone": "93456789",
+      "cell": "93456789"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Alice",
+        "last": "Brown"
+      },
+      "email": "alice.brown@example.com",
+      "dob": {
+        "date": "1988-11-05T00:00:00.000Z",
+        "age": 36
+      },
+      "registered": {
+        "date": "2018-11-05T00:00:00.000Z",
+        "age": 6
+      },
+      "phone": "84567890",
+      "cell": "84567890"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Charlie",
+        "last": "Wilson"
+      },
+      "email": "charlie.wilson@example.com",
+      "dob": {
+        "date": "1995-04-18T00:00:00.000Z",
+        "age": 29
+      },
+      "registered": {
+        "date": "2022-04-18T00:00:00.000Z",
+        "age": 2
+      },
+      "phone": "95678901",
+      "cell": "95678901"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Diana",
+        "last": "Davis"
+      },
+      "email": "diana.davis@example.com",
+      "dob": {
+        "date": "1987-09-12T00:00:00.000Z",
+        "age": 37
+      },
+      "registered": {
+        "date": "2017-09-12T00:00:00.000Z",
+        "age": 7
+      },
+      "phone": "86789012",
+      "cell": "86789012"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Edward",
+        "last": "Miller"
+      },
+      "email": "edward.miller@example.com",
+      "dob": {
+        "date": "1991-12-25T00:00:00.000Z",
+        "age": 33
+      },
+      "registered": {
+        "date": "2020-12-25T00:00:00.000Z",
+        "age": 4
+      },
+      "phone": "97890123",
+      "cell": "97890123"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Fiona",
+        "last": "Taylor"
+      },
+      "email": "fiona.taylor@example.com",
+      "dob": {
+        "date": "1989-06-08T00:00:00.000Z",
+        "age": 35
+      },
+      "registered": {
+        "date": "2019-06-08T00:00:00.000Z",
+        "age": 5
+      },
+      "phone": "88901234",
+      "cell": "88901234"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "George",
+        "last": "Anderson"
+      },
+      "email": "george.anderson@example.com",
+      "dob": {
+        "date": "1993-02-14T00:00:00.000Z",
+        "age": 31
+      },
+      "registered": {
+        "date": "2021-02-14T00:00:00.000Z",
+        "age": 3
+      },
+      "phone": "99012345",
+      "cell": "99012345"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Helen",
+        "last": "Thomas"
+      },
+      "email": "helen.thomas@example.com",
+      "dob": {
+        "date": "1986-08-30T00:00:00.000Z",
+        "age": 38
+      },
+      "registered": {
+        "date": "2018-08-30T00:00:00.000Z",
+        "age": 6
+      },
+      "phone": "80123456",
+      "cell": "80123456"
+    }
+  ],
+  "info": {
+    "seed": "test-seed",
+    "results": 10,
+    "page": 1,
+    "version": "1.4"
+  }
+}

@@ -1,0 +1,80 @@
+/* Enhanced styling for API fetch error messages */
+.api-fetch-error {
+  position: fixed !important;
+  top: 20vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10000 !important;
+  min-width: 400px !important;
+  max-width: 600px !important;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(255, 77, 79, 0.3) !important;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52) !important;
+  color: white !important;
+  border: 3px solid #ff4d4f !important;
+  animation: errorPulse 2s ease-in-out infinite !important;
+}
+
+.api-fetch-error .ant-message-notice-content {
+  background: transparent !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  padding: 15px 20px !important;
+  box-shadow: none !important;
+}
+
+.api-fetch-error .anticon {
+  color: white !important;
+  font-size: 20px !important;
+  margin-right: 12px !important;
+}
+
+/* Pulsing animation for error messages */
+@keyframes errorPulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 8px 32px rgba(255, 77, 79, 0.3);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.02);
+    box-shadow: 0 12px 40px rgba(255, 77, 79, 0.5);
+  }
+}
+
+/* Success message styling */
+.ant-message-success {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  background: linear-gradient(135deg, #52c41a, #73d13d) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(82, 196, 26, 0.3) !important;
+  animation: slideInRight 0.5s ease-out !important;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Backdrop overlay for critical errors */
+.api-error-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  z-index: 9998 !important;
+  backdrop-filter: blur(4px) !important;
+}

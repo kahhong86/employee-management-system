@@ -1,0 +1,114 @@
+/* Dashboard Component Styles */
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.employeeCardWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.employeeCardWrapper:hover .employeeCardOverlay {
+  opacity: 1;
+}
+
+.employeeCard {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.employeeCardWrapper:hover .employeeCard {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employeeCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.editButton {
+  transform: translateY(-50%);
+  margin-top: 50%;
+  position: absolute;
+  right: 10px;
+  bottom:0px;
+}
+
+.employeeName {
+  margin: 0 0 8px 0;
+  color: #1890ff;
+  display: block;
+  width:100%;
+}
+
+.employeeDetail {
+  margin: 4px 0;
+  color: #666;
+  display: flex;
+}
+
+.employeeLabel {
+  font-weight: bold;
+  width:70px;
+  display: inline-block;
+}
+
+.employeeDesc {
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.employeeGrid {
+  display: grid;
+  gap: 16px;
+  margin-bottom:20px;
+  grid-template-columns: auto auto auto;
+}
+
+.employeeSection {
+  padding: 8px 0;
+}
+
+.employeeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.employeeContainer {
+  padding:0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .employeeGrid {
+    grid-template-columns: auto;
+  }
+  .employeeLabel {
+    margin-bottom: 4px;
+  }
+  .employeeCard{
+    padding:0px;
+  }
+  
+  .employeeCardWrapper:hover .employeeCard {
+    transform: none;
+  }
+}
